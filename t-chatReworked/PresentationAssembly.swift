@@ -10,6 +10,8 @@ import UIKit
 
 protocol IPresentationAssembly {
     func channelsListVC() -> ChannelsListVC
+    func profileVC() -> ProfileVC
+    func downloadAvatarVC() -> DownloadAvatarVC
 }
 
 class PresentationAssembly: IPresentationAssembly {
@@ -24,6 +26,14 @@ class PresentationAssembly: IPresentationAssembly {
         let vc = ChannelsListVC.storyboardInstance(model: model, presentationAssembly: self)
         model.delegate = vc
         return vc
+    }
+    
+    func profileVC() -> ProfileVC {
+        ProfileVC.storyboardInstance(presentationAssembly: self)
+    }
+    
+    func downloadAvatarVC() -> DownloadAvatarVC {
+        DownloadAvatarVC.storyboardInstance(presentationAssembly: self)
     }
     
 }

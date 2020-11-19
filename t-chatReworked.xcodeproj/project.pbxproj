@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		00C53BE0256669D3000950F6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C53BDF256669D3000950F6 /* Constants.swift */; };
 		00C53BE525667C19000950F6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00C53BE425667C18000950F6 /* GoogleService-Info.plist */; };
+		00C53C08256715B8000950F6 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C53C07256715B8000950F6 /* ProfileVC.swift */; };
+		00C53C0A2567163A000950F6 /* ProfileVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C53C092567163A000950F6 /* ProfileVC.storyboard */; };
+		00C53C0D25672174000950F6 /* DownloadAvatarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C53C0C25672174000950F6 /* DownloadAvatarVC.swift */; };
+		00C53C0F25672182000950F6 /* DownloadAvatarVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C53C0E25672182000950F6 /* DownloadAvatarVC.storyboard */; };
 		00E317FE2563F5E60017F21C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E317FD2563F5E60017F21C /* AppDelegate.swift */; };
 		00E318022563F5E60017F21C /* ChannelsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E318012563F5E60017F21C /* ChannelsListVC.swift */; };
 		00E318072563F5E80017F21C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00E318062563F5E80017F21C /* Assets.xcassets */; };
@@ -36,6 +40,10 @@
 /* Begin PBXFileReference section */
 		00C53BDF256669D3000950F6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		00C53BE425667C18000950F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		00C53C07256715B8000950F6 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		00C53C092567163A000950F6 /* ProfileVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileVC.storyboard; sourceTree = "<group>"; };
+		00C53C0C25672174000950F6 /* DownloadAvatarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAvatarVC.swift; sourceTree = "<group>"; };
+		00C53C0E25672182000950F6 /* DownloadAvatarVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DownloadAvatarVC.storyboard; sourceTree = "<group>"; };
 		00E317FA2563F5E60017F21C /* t-chatReworked.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "t-chatReworked.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E317FD2563F5E60017F21C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00E318012563F5E60017F21C /* ChannelsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsListVC.swift; sourceTree = "<group>"; };
@@ -76,6 +84,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00C53C062567158F000950F6 /* ProfileVC */ = {
+			isa = PBXGroup;
+			children = (
+				00C53C07256715B8000950F6 /* ProfileVC.swift */,
+				00C53C092567163A000950F6 /* ProfileVC.storyboard */,
+			);
+			name = ProfileVC;
+			sourceTree = "<group>";
+		};
+		00C53C0B25672149000950F6 /* AvatarDownloadVC */ = {
+			isa = PBXGroup;
+			children = (
+				00C53C0C25672174000950F6 /* DownloadAvatarVC.swift */,
+				00C53C0E25672182000950F6 /* DownloadAvatarVC.storyboard */,
+			);
+			name = AvatarDownloadVC;
+			sourceTree = "<group>";
+		};
 		00E317F12563F5E60017F21C = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +198,8 @@
 		00E3181D2563FC110017F21C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				00C53C0B25672149000950F6 /* AvatarDownloadVC */,
+				00C53C062567158F000950F6 /* ProfileVC */,
 				00E3181E2563FC450017F21C /* ChannelsListVC */,
 			);
 			name = Modules;
@@ -303,7 +331,9 @@
 				00E3180A2563F5E80017F21C /* LaunchScreen.storyboard in Resources */,
 				00C53BE525667C19000950F6 /* GoogleService-Info.plist in Resources */,
 				00E31849256571CA0017F21C /* ChannelsListVC.storyboard in Resources */,
+				00C53C0F25672182000950F6 /* DownloadAvatarVC.storyboard in Resources */,
 				00E318072563F5E80017F21C /* Assets.xcassets in Resources */,
+				00C53C0A2567163A000950F6 /* ProfileVC.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +406,7 @@
 				00E31822256516990017F21C /* CoreDataStack.swift in Sources */,
 				00E3183025651FFF0017F21C /* ChannelsService.swift in Sources */,
 				00E31825256519820017F21C /* Chat.xcdatamodeld in Sources */,
+				00C53C08256715B8000950F6 /* ProfileVC.swift in Sources */,
 				00E3181A2563F9870017F21C /* CoreDataStorage.swift in Sources */,
 				00E31850256662DB0017F21C /* FirebaseCore.swift in Sources */,
 				00E318022563F5E60017F21C /* ChannelsListVC.swift in Sources */,
@@ -385,6 +416,7 @@
 				00E317FE2563F5E60017F21C /* AppDelegate.swift in Sources */,
 				00E31833256536550017F21C /* PresentationAssembly.swift in Sources */,
 				00E3182D25651F870017F21C /* ServiceAssembly.swift in Sources */,
+				00C53C0D25672174000950F6 /* DownloadAvatarVC.swift in Sources */,
 				00E3183D25654DF00017F21C /* ChannelsListVCModel.swift in Sources */,
 				00E3182825651A410017F21C /* ChannelDM+CoreDataClass.swift in Sources */,
 				00E3182925651A410017F21C /* ChannelDM+CoreDataProperties.swift in Sources */,

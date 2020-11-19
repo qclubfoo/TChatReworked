@@ -49,6 +49,10 @@ class ChannelsListVC: UIViewController, IChannelsListVCModelDelegate {
     
     @objc private func showProfileVC() {
         print(#function)
+        let profileVC = presentationAssembly.profileVC()
+//        profileVC.modalPresentationStyle = .formSheet
+        present(profileVC, animated: true)
+//        navigationController?.pushViewController(profileVC, animated: true)
     }
     
     @objc private func showThemeSettings() {
